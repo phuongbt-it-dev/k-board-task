@@ -1,0 +1,28 @@
+#k-board-task
+	.container-fluid
+		.row.no-gutters-main
+			.col-md-4
+				.box.card.border-secondary
+					.card-header.text-white.bg-secondary.d-flex.align-items-center(ripple)
+						h2.h5.mb-0.mr-auto Nhiệm vụ
+						button.btn.btn-sm.btn-circle(ripple, onclick="reFresh(1)")
+							i.fa.fa-sync
+					.card-body
+						ul.sortable.connectedSortable.list-group(data-step="step-1")
+			.col-md-4.mt-3.mt-md-0
+				.box.card.border-info
+					.card-header.text-white.bg-info.d-flex.align-items-center(ripple)
+						h2.h5.mb-0.mr-auto Đang thực hiện
+						button.btn.btn-sm.btn-circle(ripple, onclick="reFresh(2)")
+							i.fa.fa-sync
+					.card-body
+						ul.sortable.connectedSortable.list-group(data-step="step-2")
+			.col-md-4.mt-3.mt-md-0
+				.box.card.border-success
+					.card-header.text-white.bg-success.d-flex.align-items-center(ripple)
+						h2.h5.mb-0.mr-auto Hoàn thành
+						button.btn.btn-sm.btn-circle(ripple, onclick="reFresh(3)")
+							i.fa.fa-sync
+					.card-body
+						ul.sortable.connectedSortable.list-group(data-step="step-3")
+

@@ -1,0 +1,50 @@
+header.topbar
+	.container-fluid
+		.row.align-items-center
+			.col.logo
+				a(href="/", title="title")
+					img(src="./img/logo.png", alt="")
+					span K-BOARD-TASK
+			.col-auto
+				ul.nav.justify-content-end.align-items-center
+					li.nav-item#searchsite
+						input.typeahead.form-control(ype="text" placeholder="Tìm kiếm" autocomplete="off")
+					li.nav-item.dropdown
+						a.nav-link.pr-0(href="#", id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+							span.name.mr-2 Guest
+							img(src="./img/photo.png", alt="")
+						.dropdown-menu.dropdown-menu-right(aria-labelledby="navbarDropdown")
+							a#info.dropdown-item(href='javascript:void(0)', onclick="getInfoUser()") Thông tin
+							a#logout.dropdown-item(href='javascript:void(0);' onclick="logOut()") Đăng xuất
+
+section.toolbarleft
+	ul.nav.justify-content-end.align-items-center
+		li#pr_dashboard.nav-item.cr(data-toggle="tooltip" data-placement="bottom" title="Bảng điều khiển")
+			a.nav-link.active(href='/')
+				i.fa.fa-th
+		li.d-none#pr_createtask.nav-item.cr(data-toggle="tooltip" data-placement="bottom" title="Tạo mới một tác vụ")
+			a.nav-link.active(href='/addtask')
+				i.fa.fa-plus
+		li.d-none#pr_users.nav-item.cr(data-toggle="tooltip" data-placement="bottom" title="Danh sách nhân viên")
+			a.nav-link.active(href='/users')
+				i.fa.fa-user
+		li.d-none#pr_settings.nav-item.cr(data-toggle="tooltip" data-placement="bottom" title="Tuỳ chỉnh")
+			a.nav-link.active(href='/settings')
+				i.fa.fa-cog
+		li.d-none#pr_archive.nav-item.cr(data-toggle="tooltip" data-placement="bottom" title="Đã lưu trữ")
+			a.nav-link.active(href='/archivetask')
+				i.fa.fa-save
+		li#pr_help.nav-item.cr(data-toggle="tooltip" data-placement="bottom" title="Hướng dẫn")
+			a.nav-link.active(href='/help.html')
+				i.fa.fa-question
+// Modal
+#pdfModal.modal(tabindex='-1', role='dialog', aria-labelledby='pdfModalLabel', aria-hidden='true')
+	.modal-dialog(role='document')
+		.modal-content
+			.modal-header
+				h5#pdfModalLabel.modal-title
+				button.close(type='button', data-dismiss='modal', aria-label='Close')
+					span(aria-hidden='true') ×
+			.modal-body Đang tải...
+			.modal-footer
+				button.btn.btn-secondary(type='button', data-dismiss='modal') Close

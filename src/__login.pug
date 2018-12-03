@@ -1,0 +1,23 @@
+section.canhcam-form-4
+	article.container
+		form.validator.d-flex.justify-content-center
+			.boxlogin
+				.row
+					.col-12
+						h2.h3.mb-5 Đăng nhập
+					.form-group.mb-2.col-12
+						label(for='Username')
+							| Tài khoản
+							span.text-danger (*)
+						input#Username.form-control(placeholder='Name', data-error='Vui lòng nhập thông tin', required='')
+						.help-block.with-errors.small
+					.form-group.mb-2.col-12
+						label(for='Password')
+							| Mật khẩu
+							span.text-danger (*)
+						input#Password.form-control(type='password', placeholder='Password', data-error='Vui lòng nhập thông tin', required='')
+						.help-block.with-errors.small
+					.form-group.mb-0.col-12.mt-md-3
+						.row.align-items-center
+							.col-md.justify-content-md-end.d-flex
+								button.btn.btn-outline-default(type='submit') Đăng nhập

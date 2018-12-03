@@ -1,0 +1,132 @@
+{
+    "1": {
+        "username": "admin",
+        "fullname": "Bảo Nguyên",
+        "email": "baonguyenyam@gmail.com",
+        "password": "21232f297a57a5a743894a0e4a801fc3",
+        "permision": {
+            "dashboard": true,
+            "movetask": true,
+            "createtask": true,
+            "settings": true,
+            "deltassk": true,
+            "modifytask": true,
+            "adduser": true,
+            "userlist": true,
+            "archivetask": true,
+            "viewtask": true,
+            "viewuser": true
+        },
+        "settings": {
+            "editor": true,
+            "pagesize": 6,
+            "activenumberstep1drag": 3,
+            "activenumberstep2drop": 1,
+            "oneway": true
+        }
+    },
+    "2": {
+        "username": "demo",
+        "password": "fe01ce2a7fbac8fafaed7c982a04e229",
+        "email": "thanhnguyen.baonguyen@gmail.com",
+        "fullname": "Thanh Nguyễn Trần",
+        "permision": {
+            "dashboard": true,
+            "createtask": true,
+            "deltassk": true,
+            "modifytask": true,
+            "adduser": false,
+            "userlist": false,
+            "settings": true,
+            "archivetask": true,
+            "viewtask": true,
+            "movetask": true,
+            "viewuser": false
+        },
+        "settings": {
+            "editor": true,
+            "pagesize": 6,
+            "activenumberstep1drag": 3,
+            "activenumberstep2drop": 1,
+            "oneway": true
+        }
+    },
+    "3": {
+        "username": "mod",
+        "password": "ad148a3ca8bd0ef3b48c52454c493ec5",
+        "email": "mod@mod.com",
+        "fullname": "Trần Phạm",
+        "permision": {
+            "dashboard": false,
+            "createtask": false,
+            "deltassk": false,
+            "modifytask": false,
+            "adduser": true,
+            "userlist": true,
+            "settings": false,
+            "archivetask": false,
+            "viewtask": false,
+            "movetask": false,
+            "viewuser": true
+        },
+        "settings": {
+            "editor": true,
+            "pagesize": 6,
+            "activenumberstep1drag": 3,
+            "activenumberstep2drop": 1,
+            "oneway": true
+        }
+    },
+    "4": {
+        "username": "client",
+        "password": "62608e08adc29a8d6dbc9754e659f125",
+        "email": "client@client.com",
+        "fullname": "Client",
+        "permision": {
+            "dashboard": false,
+            "createtask": true,
+            "deltassk": true,
+            "modifytask": true,
+            "adduser": false,
+            "userlist": false,
+            "settings": false,
+            "archivetask": true,
+            "viewtask": true,
+            "movetask": true,
+            "viewuser": false
+        },
+        "settings": {
+            "editor": true,
+            "pagesize": 6,
+            "activenumberstep1drag": 3,
+            "activenumberstep2drop": 1,
+            "oneway": true
+        }
+    },
+    "5": {
+        "username": "user",
+        "password": "ee11cbb19052e40b07aac0ca060c23ee",
+        "email": "user@user.com",
+        "fullname": "User",
+        "permision": {
+            "dashboard": false,
+            "createtask": false,
+            "deltassk": false,
+            "modifytask": false,
+            "adduser": false,
+            "userlist": false,
+            "settings": false,
+            "archivetask": false,
+            "viewtask": false,
+            "movetask": false,
+            "viewuser": false
+        },
+        "settings": {
+            "editor": true,
+            "pagesize": 6,
+            "activenumberstep1drag": 3,
+            "activenumberstep2drop": 1,
+            "oneway": true
+        }
+    }
+}
